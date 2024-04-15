@@ -1,0 +1,12 @@
+DROP TABLE EMployees;
+
+CREATE TABLE Employees (
+  Id INT  AUTO_INCREMENT PRIMARY KEY,
+  FirstName VARCHAR(45) NOT NULL,
+  LastName VARCHAR(45) NOT NULL,
+  Address VARCHAR(60) UNIQUE NOT NULL,
+  Cv VARCHAR(60) UNIQUE NOT NULL,
+  Phone VARCHAR(60) NOT NULL,
+  Status ENUM("Active", "Disable", "License") ,
+  Position VARCHAR(60) 
+)
